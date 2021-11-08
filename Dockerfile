@@ -10,6 +10,7 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
+COPY ./assets/index.html /app/assets/
 
 RUN go build -o /birdpedia
 

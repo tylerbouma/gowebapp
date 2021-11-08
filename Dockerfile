@@ -10,8 +10,7 @@ COPY assets/ ./assets/
 
 RUN go mod download
 
-COPY * ./
-#COPY ./assets/index.html ./assets/
+COPY *.go ./
 
 RUN go build -o /birdpedia
 

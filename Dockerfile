@@ -6,6 +6,7 @@ WORKDIR /app
 
 COPY go.mod ./
 COPY go.sum ./
+COPY assets/ ./assets/
 
 RUN go mod download
 
